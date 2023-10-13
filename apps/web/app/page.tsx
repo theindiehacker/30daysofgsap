@@ -3,6 +3,7 @@ import Link from 'next/link'
 const links = [
   { href: '/day-1-fadeinout', label: 'Day 1 | Fade In/Out' },
   { href: '/day-2-slideupdown', label: 'Day 2 | Slide Up/Down' },
+  { href: '/day-3-scale', label: 'Day 3 | Scale' },
 ]
 
 export default function Home() {

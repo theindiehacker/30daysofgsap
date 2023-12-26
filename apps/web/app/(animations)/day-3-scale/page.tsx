@@ -7,7 +7,7 @@ import { cn } from 'ui/lib/utils/cn'
 export default function Day3ScalePage() {
   useLayoutEffect(() => {
     gsap.registerEffect({
-      name: 'scale',
+      name: 'rotate',
       effect: (
         targets: gsap.TweenTarget,
         config: { opacity: number; scale: number; duration: number },
@@ -19,12 +19,12 @@ export default function Day3ScalePage() {
           duration: config.duration,
         })
       },
-      defaults: { opacity: 1, scale: 1.5, duration: 1 },
+      defaults: { opacity: 1, rotat: 1.5, duration: 1 },
       extendTimeline: true,
     })
 
     let tl = gsap.timeline()
-    tl.scale('.box', {
+    tl.rotate('.box', {
       stagger: {
         amount: 2,
       },
